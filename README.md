@@ -76,6 +76,6 @@ sudo apt install libopenblas-dev libblas-dev m4 cmake cython python3-dev python3
   chmod +x setup_jupyter.sh && ./setup_jupyter.sh
   ```
 - #### Verify jupyter install
- ```
- jupyter notebook
- ```
+  ```
+  jupyter notebook
+  ```
