@@ -1,6 +1,6 @@
 # Instruction for installing [fast.ai](https://www.fast.ai) on Raspberry Pi 4
 
-- Clone this repo to home directory
+- ### Clone this repo to home directory
 - Set up swap file
 ```
 chmod +x setup_swapfile.sh && ./setup_swapfile.sh
