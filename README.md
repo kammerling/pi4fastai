@@ -38,8 +38,7 @@ sudo apt install libopenblas-dev libblas-dev m4 cmake cython python3-dev python3
       ```
   * ##### Method 2: download pytorch wheel from this repo (may only work for Raspberry pi 4)
     ```
-    mkdir pytorch
-    cd pytorch
+    mkdir pytorch && cd pytorch
     mv /home/torch-1.0.0a0+8322165-cp37-cp37m-linux_armv7l.whl /home/pytorch/torch-1.0.0a0+8322165-cp37-cp37m-linux_armv7l.whl
     sudo pip3 install ./torch-1.0.0a0+8322165-cp37-cp37m-linux_armv7l.whl
     ```
@@ -66,6 +65,7 @@ sudo apt install libopenblas-dev libblas-dev m4 cmake cython python3-dev python3
   ```
 - #### Install fastai and dependancies
   ```
+  cd
   chmod +x fastai_jetson.sh && ./fastai_jetson.sh
   ```
   Above will print #### Done with part1 – now logout, login again and run setup_jupyter.sh
@@ -75,3 +75,7 @@ sudo apt install libopenblas-dev libblas-dev m4 cmake cython python3-dev python3
   ```
   chmod +x setup_jupyter.sh && ./setup_jupyter.sh
   ```
+- #### Verify jupyter install
+ ```
+ jupyter notebook
+ ```
