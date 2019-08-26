@@ -52,3 +52,11 @@ sudo apt install libopenblas-dev libblas-dev m4 cmake cython python3-dev python3
    >>> a = torch.rand(5,3)
    >>> print (a)
    ```
+   Output from about should look like 
+   ```
+   tensor([[0.3380, 0.3845, 0.3217],
+        [0.8337, 0.9050, 0.2650],
+        [0.2979, 0.7141, 0.9069],
+        [0.1449, 0.1132, 0.1375],
+        [0.4675, 0.3947, 0.1426]])
+   ```
