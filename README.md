@@ -43,20 +43,35 @@ sudo apt install libopenblas-dev libblas-dev m4 cmake cython python3-dev python3
     mv /home/torch-1.0.0a0+8322165-cp37-cp37m-linux_armv7l.whl /home/pytorch/torch-1.0.0a0+8322165-cp37-cp37m-linux_armv7l.whl
     sudo pip3 install ./torch-1.0.0a0+8322165-cp37-cp37m-linux_armv7l.whl
     ```
- - #### Verify pytorch installatiion
-   ```
-   cd 
-   python3
-   >>> from __future__ import print_function
-   >>> import torch
-   >>> a = torch.rand(5,3)
-   >>> print (a)
-   ```
-   Output from about should look like 
-   ```
-   tensor([[0.3380, 0.3845, 0.3217],
-        [0.8337, 0.9050, 0.2650],
-        [0.2979, 0.7141, 0.9069],
-        [0.1449, 0.1132, 0.1375],
-        [0.4675, 0.3947, 0.1426]])
-   ```
+- #### Verify pytorch installatiion
+  ```
+  cd 
+  python3
+  >>> from __future__ import print_function
+  >>> import torch
+  >>> a = torch.rand(5,3)
+  >>> print (a)
+  ```
+  Output from about should look like 
+  ```
+  tensor([[0.3380, 0.3845, 0.3217],
+       [0.8337, 0.9050, 0.2650],
+       [0.2979, 0.7141, 0.9069],
+       [0.1449, 0.1132, 0.1375],
+       [0.4675, 0.3947, 0.1426]])
+  ```
+  Exit python
+  ```
+  exit()
+  ```
+- #### Install fastai and dependancies
+  ```
+  chmod +x fastai_jetson.sh && ./fastai_jetson.sh
+  ```
+  Above will print #### Done with part1 – now logout, login again and run setup_jupyter.sh
+  Restart Pi
+
+- #### Setup jupyter
+  ```
+  chmod +x setup_jupyter.sh && ./setup_jupyter.sh
+  ```
