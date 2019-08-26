@@ -43,4 +43,12 @@ sudo apt install libopenblas-dev libblas-dev m4 cmake cython python3-dev python3
     mv /home/torch-1.0.0a0+8322165-cp37-cp37m-linux_armv7l.whl /home/pytorch/torch-1.0.0a0+8322165-cp37-cp37m-linux_armv7l.whl
     sudo pip3 install ./torch-1.0.0a0+8322165-cp37-cp37m-linux_armv7l.whl
     ```
-      
+ - #### Verify pytorch installatiion
+   ```
+   cd 
+   python3
+   >>> from __future__ import print_function
+   >>> import torch
+   >>> a = torch.rand(5,3)
+   >>> print (a)
+   ```
