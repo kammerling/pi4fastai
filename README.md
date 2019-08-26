@@ -1,5 +1,12 @@
-# pi4fastai
-Fastai installation instructions for Raspberry Pi 4 for inference
+# Instruction for installing [fast.ai](https://www.fast.ai) on Raspberry Pi 4
 
-Step 1: Download fastai_rpi4.sh, jetson_headless.sh, jupyter_notebook_config.py, setup_jupyter.sh and setup_swapfile.sh to home directory
-Step 2: 
+- Clone this repo to home directory
+- Set up swap file
+```
+chmod +x setup_swapfile.sh && ./setup_swapfile.sh
+```
+- Install prerequisites
+```
+sudo apt install libopenblas-dev libblas-dev m4 cmake cython python3-dev python3-yaml python3-setuptools
+```
+- Install pytorch
