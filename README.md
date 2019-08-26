@@ -1,16 +1,16 @@
 # Instruction for installing [fast.ai](https://www.fast.ai) on Raspberry Pi 4
 
-- ### Clone this repo to home directory
-- Set up swap file
+- #### Clone this repo to home directory
+- #### Set up swap file
 ```
 chmod +x setup_swapfile.sh && ./setup_swapfile.sh
 ```
-- Install prerequisites
+- #### Install prerequisites
 ```
 sudo apt install libopenblas-dev libblas-dev m4 cmake cython python3-dev python3-yaml python3-setuptools
 ```
-- Install pytorch
-  * Method 1: Build from source (This process may take several hours but will work for any ARM boards)
+- #### Install pytorch
+  * ##### Method 1: Build from source (This process may take several hours but will work for any ARM boards)
     - Clone pytorch repo
       ```
       mkdir pytorch_install && cd pytorch_install
@@ -36,7 +36,7 @@ sudo apt install libopenblas-dev libblas-dev m4 cmake cython python3-dev python3
       ```
       sudo -E python3 setup.py install
       ```
-  * Method 2: download pytorch wheel from this repo (may only work for Raspberry pi 4)
+  * ##### Method 2: download pytorch wheel from this repo (may only work for Raspberry pi 4)
     ```
     mkdir pytorch
     cd pytorch
