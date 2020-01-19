@@ -1,5 +1,5 @@
 # Instruction for installing [fast.ai](https://www.fast.ai) on Raspberry Pi 4 
-# forked from prakash0228/pi4fastai
+forked from prakash0228/pi4fastai
 
 - #### Clone this repo to home directory
 - #### Set up swap file
