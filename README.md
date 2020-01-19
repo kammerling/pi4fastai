@@ -16,7 +16,7 @@ sudo apt install libopenblas-dev libblas-dev m4 cmake cython python3-dev python3
       mkdir pytorch_install && cd pytorch_install
       git clone --recursive https://github.com/pytorch/pytorch
       cd pytorch
-      git checkout v1.0.1
+      git checkout v1.1.0
       git submodule update --init
       git submodule update --remote third_party/protobuf
       ```
