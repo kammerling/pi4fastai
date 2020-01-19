@@ -66,7 +66,7 @@ sudo apt install libopenblas-dev libblas-dev m4 cmake cython python3-dev python3
 - #### Install fastai and dependancies
   ```
   cd
-  chmod +x fastai_jetson.sh && ./fastai_jetson.sh
+  chmod +x fastai_rpi4.sh && ./fastai_rpi4.sh
   ```
   Above will print #### Done with part1 – now logout, login again and run setup_jupyter.sh
   Restart Pi
