@@ -1,4 +1,5 @@
-# Instruction for installing [fast.ai](https://www.fast.ai) on Raspberry Pi 4
+# Instruction for installing [fast.ai](https://www.fast.ai) on Raspberry Pi 4 
+# forked from prakash0228/pi4fastai
 
 - #### Clone this repo to home directory
 - #### Set up swap file
@@ -7,7 +8,7 @@ chmod +x setup_swapfile.sh && ./setup_swapfile.sh
 ```
 - #### Install prerequisites
 ```
-sudo apt install libopenblas-dev libblas-dev m4 cmake cython python3-dev python3-yaml python3-setuptools
+sudo apt install libopenblas-dev libblas-dev m4 cmake cython python3-dev python3-yaml python3-setuptools numpy
 ```
 - #### Install pytorch
   * ##### Method 1: Build from source (This process may take several hours but will work for any ARM boards)
